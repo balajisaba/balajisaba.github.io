@@ -444,3 +444,29 @@ transition:all 0.8s ease;
 opacity:1;
 transform:translateY(0);
 }
+
+
+
+.impact-container{
+display:flex;
+gap:60px;
+align-items:center;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.impact-table{
+border-collapse:collapse;
+font-size:16px;
+}
+
+.impact-table th,
+.impact-table td{
+padding:8px 20px;
+text-align:left;
+}
+
+.impact-chart{
+width:500px;
+}
