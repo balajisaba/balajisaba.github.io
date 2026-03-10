@@ -14,7 +14,35 @@ navbar.style.boxShadow = "0 2px 10px rgba(0,0,0,0.05)";
 
 });
 
+const ctx = document.getElementById('citationChart');
 
+new Chart(ctx, {
+type: 'bar',
+data: {
+labels: ['2018','2019','2020','2021','2022','2023','2024','2025'],
+datasets: [{
+label: 'Citations',
+data: [1,0,0,0,1,1,0,3],
+borderWidth:1
+}]
+},
+options: {
+responsive:true,
+plugins:{
+legend:{
+display:false
+}
+},
+scales:{
+y:{
+beginAtZero:true,
+ticks:{
+stepSize:1
+}
+}
+}
+}
+});
 
 /* ============================= */
 /* SMOOTH SCROLL NAVIGATION */
